@@ -15,3 +15,20 @@ the plugin to be loaded haven't been modified.
 
 ####Errors
 - For some reason it doesn't work with Java's AES/CBC/PKCS5Padding encryption.
+
+####Compiler stuff
+- IDE used: NetBeans
+- Compiler used: TDM-MinGW64
+
+#####x86_64
+Don't forget to add "-Dx86_64" to the preprocessor options.
+
+- gcc compiler flags: -m64 -static-libgcc -static-libstdc++ -Wl,--add-stdcall-alias -shared
+- g++ compiler flags: -m64 -static-libgcc -static-libstdc++ -Wl,--add-stdcall-alias -shared
+
+#####x86
+- gcc compiler flags: -static-libgcc -static-libstdc++ -Wl,--add-stdcall-alias -shared
+- g++ compiler flags: -static-libgcc -static-libstdc++ -Wl,--add-stdcall-alias -shared
+
+####Link to the other projects:
+[Link](https://github.com/gkovalechyn/CPL2)
